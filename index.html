@@ -19,6 +19,19 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+    <style>
+      #slider-thumbnail .owl-carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      };
+      #slider-thumbnail .item img {
+        width: 200px;           /* Hace que las imágenes ocupen el 100% del tamaño del contenedor */
+        height: auto;          /* Mantiene la proporción de las imágenes */
+        object-fit: contain;   /* Asegura que las imágenes se ajusten sin deformarse */
+      };
+    </style>
   </head>
   <body id="home" class="home">
 
@@ -374,42 +387,27 @@
             <div id="slider-thumbnail" class="owl-carousel owl-theme client-slider slider-carousel navigation-hide">
               <div class="item">
                 <a href="#">
-                  <img src="assets/img/img-client-01.png" alt="client">
+                  <img src="assets/img/logo_isssteleon.png" alt="client" class="img-responsive" width="200" height="100">
                 </a>
               </div><!-- .item -->
               <div class="item">
                 <a href="#">
-                  <img src="assets/img/img-client-02.png" alt="client">
+                  <img src="assets/img/logo-autopolis.png" alt="client" class="img-responsive" width="200" height="100">
                 </a>
               </div><!-- .item -->
               <div class="item">
                 <a href="#">
-                  <img src="assets/img/img-client-03.png" alt="client">
+                  <img src="assets/img/logo-cij.png" alt="client" class="img-responsive" width="200" height="100">
                 </a>
               </div><!-- .item -->
               <div class="item">
                 <a href="#">
-                  <img src="assets/img/img-client-04.png" alt="client">
+                  <img src="assets/img/logo-pioneros.jpg" alt="client" class="img-responsive" width="200" height="100">
                 </a>
               </div><!-- .item -->
               <div class="item">
                 <a href="#">
-                  <img src="assets/img/img-client-05.png" alt="client">
-                </a>
-              </div><!-- .item -->
-              <div class="item">
-                <a href="#">
-                  <img src="assets/img/img-client-06.png" alt="client">
-                </a>
-              </div><!-- .item -->
-              <div class="item">
-                <a href="#">
-                  <img src="assets/img/img-client-07.png" alt="client">
-                </a>
-              </div><!-- .item -->
-              <div class="item">
-                <a href="#">
-                  <img src="assets/img/img-client-08.png" alt="client">
+                  <img src="assets/img/logo-pollo.png" alt="client" class="img-responsive" width="200" height="100">
                 </a>
               </div><!-- .item -->
             </div><!-- #slider-thumbnail -->
@@ -438,6 +436,30 @@
     <script src="assets/js/script.min.js"></script>
     <script>
       $("#footer").load("footer.html");
+      $(document).ready(function(){
+        $("#slider-thumbnail").owlCarousel({
+          items: 4,
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          center: true,
+          autoplayHoverPause: true,
+          nav: true,
+          dots: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+        });
+      });
     </script>
   </body>
 
