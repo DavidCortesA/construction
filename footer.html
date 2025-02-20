@@ -51,9 +51,17 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 copy-left">
-        <p>Meccanik Group. Todos los derechos reservados.</p>
+        <p>Meccanik Group. Todos los derechos reservados <span id="year"></span>.</p>
       </div><!-- .col-sm-6 -->
     </div><!-- .row -->
   </div><!-- .container -->
 </section><!-- #copyright -->
 <!-- begin:copyright -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    let date = new Date().getFullYear();
+    $("#year").text(" " + date);
+  });
+</script>
