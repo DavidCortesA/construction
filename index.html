@@ -420,64 +420,8 @@
     <!-- end:client -->
 
     <!-- begin:footer -->
-    <footer id="colophon" class="site-footer bg-black" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <section class="widget">
-              <img src="assets/img/img-logo-footer.webp" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
-              <p>Empresa constructora con sede en Monterrey, Nuevo León. Meccanik Group se destaca en mantener la integridad del proyecto en planificación, programación, costos y calidad. Fundada en 2022 en Monterrey, Nuevo León, ofrecemos servicios excepcionales en construcción.</p>
-            </section><!-- .widget -->
-          </div><!-- .col-## -->
-
-          <div class="col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0">
-            <section class="widget">
-              <h3 class="widget-title">Nuestra compañia</h3>
-              <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </section><!-- .widget -->
-          </div><!-- .col-## -->
-
-          <div class="col-md-3 col-sm-6">
-            <section class="widget">
-              <h3 class="widget-title">Nuestros servicios</h3>
-              <ul>
-                <li><a href="#">Metal Roofting</a></li>
-                <li><a href="#">Green Building</a></li>
-                <li><a href="#">Construction Consultant</a></li>
-                <li><a href="#">Construction Management</a></li>
-                <li><a href="#">General Contracting</a></li>
-              </ul>
-            </section><!-- .widget -->
-          </div><!-- .col-## -->
-
-          <div class="col-md-3 col-sm-6">
-            <section class="widget">
-              <h3 class="widget-title">Nuestro contacto</h3>
-              <p>Av. Ricardo Covarrubias 3544-4, La Primavera, 67855 Monterrey, N.L.</p>
-              <p><a href="mailto:contacto@meccanikgroup.com" class="text-decoration-none">contacto@meccanikgroup.com</a><br><a href="tel:+528122309235" class="text-decoration-none">+52 (81) 2230-9235</a></p>
-            </section>
-          </div><!-- .col-## -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </footer><!-- #colophon -->
+    <div id="footer"></div>
     <!-- end:footer -->
-
-    <!-- begin:copyright -->
-    <section id="copyright" class="copyright bg-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 copy-left">
-             <p>Meccanik Group. Todos los derechos reservados.</p>
-          </div><!-- .col-sm-6 -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- #copyright -->
-    <!-- begin:copyright -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -492,6 +436,9 @@
     <script src="assets/plugins/isotope.pkgd.min.js"></script>
     <script src="assets/plugins/owl.carousel.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script>
+      $("#footer").load("footer.html");
+    </script>
   </body>
 
 </html>
