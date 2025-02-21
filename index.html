@@ -20,17 +20,19 @@
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
     <style>
-      #slider-thumbnail .owl-carousel {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-      };
-      #slider-thumbnail .item img {
-        width: 200px;           /* Hace que las imágenes ocupen el 100% del tamaño del contenedor */
-        height: auto;          /* Mantiene la proporción de las imágenes */
-        object-fit: contain;   /* Asegura que las imágenes se ajusten sin deformarse */
-      };
+      .carousel-inner .item {
+          text-align: center;
+      }
+      .logo-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .logo-container img {
+          max-height: 100px; /* Ajusta el tamaño */
+          max-width: 100%;
+          margin: 0 auto; /* Centra los logos */
+      }
     </style>
   </head>
   <body id="home" class="home">
@@ -56,16 +58,6 @@
                     <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
                       <li class="menu-item current-menu-item"><a href="index.html">Inicio</a></li>
                       <li class="menu-item"><a href="about.html">Nosotros</a></li>
-                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Servicios</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item current-menu-item"><a href="service.html">Todos</a></li>
-                          <li class="menu-item"><a href="service.html">Consultoría en Construcción</a></li>
-                          <li class="menu-item"><a href="service.html">Contratación General</a></li>
-                          <li class="menu-item"><a href="service.html">Renovación de Casas</a></li>
-                          <li class="menu-item"><a href="service.html">Gestión de Construcción</a></li>
-                          <li class="menu-item"><a href="service.html">Diseño y Construcción</a></li>                          
-                        </ul>
-                      </li>
                       <li class="menu-item"><a href="project.html">Proyectos</a></li>
                       <li class="menu-item"><a href="contact.html">Contacto</a></li>
                     </ul>
@@ -86,7 +78,7 @@
               <h2 class="caption-title">Somos tu mejor solución en viviendas, oficinas y construcción.</h2>
               <p>Proporcionamos planificación, coordinación y control general de un proyecto, para que no tengas que preocuparte por nada. Nuestra promesa como constructores es generar valor comunitario en cada proyecto y al mismo tiempo brindar experiencia profesional.</p>
               <div class="header-action-button">
-                <a class="btn btn-default btn-black btn-md" href="#">Contactanos</a>
+                <a class="btn btn-default btn-black btn-md" href="/contact.html">Contactanos</a>
                 <a class="btn btn-default btn-bordered btn-md" href="/about.html">Nosotros</a>
               </div><!-- header-action-button -->
             </div><!-- .header-caption -->
@@ -113,77 +105,72 @@
 
         <div class="row">
           <div class="col-md-12">
-            <ul class="work-filter">
+            <ul class="work-filter" style="display: flex; flex-wrap: wrap; justify-content: center;">
               <li class="active" data-filter="*"><a href="#">Todos</a></li>
-              <li data-filter=".buildings"><a href="#buildings">Fiscalias</a></li>
-              <li data-filter=".interior-design"><a href="#interior-design">Casas</a></li>
-              <li data-filter=".isolation"><a href="#isolation">Mallas</a></li>
-              <li data-filter=".house-renovation"><a href="#house-renovation">Otros</a></li>
+              <li data-filter=".buildings"><a href="#buildings">Adecuación de Espacios</a></li>
+              <li data-filter=".interior-design"><a href="#interior-design">Trabajos de Tablaroca y Cancelería de aluminio</a></li>
+              <li data-filter=".isolation"><a href="#isolation">Limpieza y pulido de pisos</a></li>
+              <li data-filter=".house-renovation"><a href="#house-renovation">Limpieza de vidrios y fachadas</a></li>
             </ul><!-- .work-filter -->
 
             <ul class="work-grid">
               <li class="work-item buildings">
-                <a href="proyectos/fiscalia-cejum/image_21.jpg" title="Fiscalia CEJUM" class="image-lightbox">
+                <a href="proyectos/Adecuacion-Espacios/imagen_1.jpg" title="Adecuación de Espacios" class="image-lightbox">
                   <div class="work-item-image">
-                    <img src="proyectos/fiscalia-cejum/image_21.jpg" class="img-responsive" alt="Fiscalia CEJUM" width="380px" height="250px" style="background-size: cover;">
+                    <img src="proyectos/Adecuacion-Espacios/imagen_1.jpg" class="img-responsive" alt="Adecuación de Espacios" width="380px" height="250px" style="background-size: cover;">
                   </div><!-- .work-item-image -->
                   <div class="work-item-info">
-                    <h4 class="work-item-title">Fiscalia CEJUM</h4>
-                    <span class="work-item-desc">Fiscalia</span>
-                  </div><!-- .work-item-info -->
-                </a>
-              </li><!-- .work-item -->
-              <li class="work-item buildings">
-                <a href="proyectos/fiscalia-gonzalitos/image_1.jpg" title="Fiscalia Gonzalitos" class="image-lightbox">
-                  <div class="work-item-image">
-                    <img src="proyectos/fiscalia-gonzalitos/image_1.jpg" alt="Fiscalia Gonzalitos">
-                  </div><!-- .work-item-image -->
-                  <div class="work-item-info">
-                    <h4 class="work-item-title">Fiscalia Gonzalitos</h4>
-                    <span class="work-item-desc">Fiscalia</span>
+                    <h4 class="work-item-title">Adecuación de Espacios</h4>
                   </div><!-- .work-item-info -->
                 </a>
               </li><!-- .work-item -->
               <li class="work-item interior-design">
-                <a href="proyectos/casa-alameda/image_53.jpg" title="Casa Alameda" class="image-lightbox">
+                <a href="proyectos/Tabla-Roca/imagen_11.jpg" title="Trabajos de Tablaroca y Cancelería de aluminio" class="image-lightbox">
                   <div class="work-item-image">
-                    <img src="proyectos/casa-alameda/image_53.jpg" alt="Casa Alameda">
+                    <img src="proyectos/Tabla-Roca/imagen_11.jpg" alt="Trabajos de Tablaroca y Cancelería de aluminio">
                   </div><!-- .work-item-image -->
                   <div class="work-item-info">
-                    <h4 class="work-item-title">Casa Alameda</h4>
-                    <span class="work-item-desc">Casa</span>
-                  </div><!-- .work-item-info -->
-                </a>
-              </li><!-- .work-item -->
-              <li class="work-item buildings">
-                <a href="proyectos/fiscalia-ocampo/image_7.jpg" title="Fiscalia Ocampo" class="image-lightbox">
-                  <div class="work-item-image">
-                    <img src="proyectos/fiscalia-ocampo/image_7.jpg" alt="Fiscalia Ocampo">
-                  </div><!-- .work-item-image -->
-                  <div class="work-item-info">
-                    <h4 class="work-item-title">Fiscalia Ocampo</h4>
-                    <span class="work-item-desc">Fiscalia</span>
+                    <h4 class="work-item-title">Trabajos de Tablaroca y Cancelería de aluminio</h4>
                   </div><!-- .work-item-info -->
                 </a>
               </li><!-- .work-item -->
               <li class="work-item isolation">
-                <a href="proyectos/malla-ciclonica/image_2.jpg" title="Malla Ciclonicas" class="image-lightbox">
+                <a href="proyectos/Limpieza/imagen_1.jpg" title="Limpieza y pulido de pisos" class="image-lightbox">
                   <div class="work-item-image">
-                    <img src="proyectos/malla-ciclonica/image_2.jpg" alt="Malla Ciclonicas">
+                    <img src="proyectos/Limpieza/imagen_1.jpg" alt="Limpieza y pulido de pisos">
                   </div><!-- .work-item-image -->
                   <div class="work-item-info">
-                    <h4 class="work-item-title">Malla Ciclonicas</h4>
-                    <span class="work-item-desc">Mallas</span>
+                    <h4 class="work-item-title">Limpieza y pulido de pisos</h4>
+                  </div><!-- .work-item-info -->
+                </a>
+              </li><!-- .work-item -->
+              <li class="work-item isolation">
+                <a href="proyectos/Vidrios/imagen_17.jpg" title="Limpieza de vidrios y fachadas" class="image-lightbox">
+                  <div class="work-item-image">
+                    <img src="proyectos/Vidrios/imagen_17.jpg" alt="Limpieza de vidrios y fachadas">
+                  </div><!-- .work-item-image -->
+                  <div class="work-item-info">
+                    <h4 class="work-item-title">Limpieza de vidrios y fachadas</h4>
                   </div><!-- .work-item-info -->
                 </a>
               </li><!-- .work-item -->
               <li class="work-item house-renovation">
-                <a href="proyectos/otros/image_1.jpg" title="Otros" class="image-lightbox">
+                <a href="proyectos/Vidrios/imagen_23.jpg" title="Limpieza de vidrios y fachadas" class="image-lightbox">
                   <div class="work-item-image">
-                    <img src="proyectos/otros/image_1.jpg" alt="Otros">
+                    <img src="proyectos/Vidrios/imagen_23.jpg" alt="Limpieza de vidrios y fachadas">
                   </div><!-- .work-item-image -->
                   <div class="work-item-info">
-                    <h4 class="work-item-title">Otros</h4>
+                    <h4 class="work-item-title">Limpieza de vidrios y fachadas</h4>
+                  </div><!-- .work-item-info -->
+                </a>
+              </li><!-- .work-item -->
+              <li class="work-item house-renovation">
+                <a href="proyectos/Vidrios/imagen_10.jpg" title="Limpieza de vidrios y fachadas" class="image-lightbox">
+                  <div class="work-item-image">
+                    <img src="proyectos/Vidrios/imagen_10.jpg" alt="Limpieza de vidrios y fachadas">
+                  </div><!-- .work-item-image -->
+                  <div class="work-item-info">
+                    <h4 class="work-item-title">Limpieza de vidrios y fachadas</h4>
                   </div><!-- .work-item-info -->
                 </a>
               </li><!-- .work-item -->
@@ -206,7 +193,7 @@
             <p>Ofrecemos los mejores ingenieros y constructores para hacer realidad sus sueños.</p>
           </div><!-- .col-sm-6 -->
           <div class="col-sm-4 text-right marg-20-top">
-            <a href="#" class="button">Hablemos juntos</a>
+            <a href="/contact.html" class="button">Hablemos juntos</a>
           </div>
         </div><!-- .row -->
       </div><!-- .container -->
@@ -297,72 +284,69 @@
     </div><!-- #why -->
     <!-- end:why -->
 
-    <!-- begin:testimonial -->
-    <div id="testimonial" class="block-section image-block bg-light">
-      <div class="container-fluid container-no-padding">
-        <div class="row row-no-margin">
-          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
-            <div class="image-block-item-background" style="background-image: url('assets/img/img-content-03.jpg');"></div>
-          </div><!-- .image-block-item -->
-        </div><!-- .row -->
-      </div><!-- .container-fluid -->
-
-      <div class="container clear">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-60-top padd-100-btm">
-            <div class="section-title">
-              <h2>TESTIMONIOS</h2>
-            </div>
-            <div class="carousel slide testimony-dark" id="testimony" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#testimony" data-slide-to="0" class="active"></li>
-                <li data-target="#testimony" data-slide-to="1" class=""></li>
-              </ol><!-- .carousel-indicators -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <p>Recientemente tuvimos que rediseñar nuestra página de destino y buscábamos una plantilla que se ajustara a nuestras necesidades. Encontramos esta plantilla que superó con creces nuestras expectativas.</p>
-                  <img class="testimony-item-image" src="assets/img/img-testimony-01.jpg">
-                  <span class="testimony-item-source source-alt"><strong>David Groot</strong> Shark Inc.</span>
-                </div><!-- .item -->
-                <div class="item">
-                  <p>No sé qué más decir. Tenía todo lo que queríamos y estaba mejor diseñado que cualquier cosa que pudiéramos haber logrado por nuestra cuenta. Gracias por el buen trabajo.</p>
-                  <img class="testimony-item-image" src="assets/img/img-testimony-02.jpg">
-                  <span class="testimony-item-source source-alt"><strong>Max Well</strong> Cooldad</span>
-                </div><!-- .item -->
-              </div><!-- .carousel-inner -->
-            </div><!-- #client-says -->
-          </div><!-- .col-## -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </div><!-- #testimonial -->
-    <!-- end:testimonial -->
-
     <!-- begin:client -->
-    <div id="client" class="client block-section bg-white padd-40-top padd-40-btm">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="slider-thumbnail" class="owl-carousel owl-theme client-slider slider-carousel navigation-hide">
-              <div class="item">
-                <img src="assets/img/logo_isssteleon.png" alt="client" class="img-responsive" width="200" height="100">
-              </div><!-- .item -->
-              <div class="item">
-                <img src="assets/img/logo-autopolis.png" alt="client" class="img-responsive" width="200" height="100">
-              </div><!-- .item -->
-              <div class="item">
-                <img src="assets/img/logo-cij.png" alt="client" class="img-responsive" width="200" height="100">
-              </div><!-- .item -->
-              <div class="item">
-                <img src="assets/img/logo-pioneros.jpg" alt="client" class="img-responsive" width="200" height="100">
-              </div><!-- .item -->
-              <div class="item">
-                <img src="assets/img/logo-pollo.png" alt="client" class="img-responsive" width="200" height="100">
-              </div><!-- .item -->
-            </div><!-- #slider-thumbnail -->
-          </div><!-- .col-md-12 -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </div><!-- #client -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Carrusel de Logos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-inner .item {
+                text-align: center;
+            }
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo-container img {
+                max-height: 100px; /* Ajusta el tamaño */
+                max-width: 100%;
+                margin: 0 auto; /* Centra los logos */
+            }
+        </style>
+    </head>
+    <body>
+    
+  <!-- begin:client -->
+  <div id="client" class="client block-section bg-white padd-40-top padd-40-btm">
+    <div class="container">
+        <div class="section-title">
+          <h2 class="text-center">Nuestros clientes nos Respaldan</h2>
+        </div>
+        <div id="logoCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Contenedor de imágenes -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row logo-container">
+                        <div class="col-xs-4"><img src="assets/img/logo-autopolis.png" alt="Logo 1"></div>
+                        <div class="col-xs-4"><img src="assets/img/logo-cij.png" alt="Logo 2"></div>
+                        <div class="col-xs-4"><img src="assets/img/logo-pioneros.jpg" alt="Logo 3"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row logo-container">
+                        <div class="col-xs-4"><img src="assets/img/logo-pollo.png" alt="Logo 4"></div>
+                        <div class="col-xs-4"><img src="assets/img/logo_isssteleon.png" alt="Logo 5"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles -->
+            <a class="left carousel-control" href="#logoCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#logoCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+  </div><!-- #client -->
+  <!-- end:client -->
+    
     <!-- end:client -->
 
     <!-- begin:footer -->

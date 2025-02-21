@@ -97,16 +97,6 @@
                   <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
                     <li class="menu-item"><a href="index.html">Inicio</a></li>
                     <li class="menu-item"><a href="about.html">Nosotros</a></li>
-                    <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Servicios</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item current-menu-item"><a href="service.html">Todos</a></li>
-                        <li class="menu-item"><a href="service-item.html">Consultoría en Construcción</a></li>
-                        <li class="menu-item"><a href="service-item.html">Contratación General</a></li>
-                        <li class="menu-item"><a href="service-item.html">Renovación de Casas</a></li>
-                        <li class="menu-item"><a href="service-item.html">Gestión de Construcción</a></li>
-                        <li class="menu-item"><a href="service-item.html">Diseño y Construcción</a></li>
-                      </ul>
-                    </li>
                     <li class="menu-item current-menu-item"><a href="project.html">Proyectos</a></li>
                     <li class="menu-item"><a href="contact.html">Contacto</a></li>
                   </ul>
@@ -154,16 +144,15 @@
     <div class="container">
       <h1 class="text-center">Galería de Proyectos</h1>
       <div class="buttons" style="display: flex; justify-content: center; flex-direction: row; gap: 2rem; flex-wrap: wrap;">
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-cejum')">Fiscalía CEJUM</button>
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-insurgentes')">Fiscalia Insurgentes</button>
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-fleteros')">Fiscalia Fleteros</button>
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-santiago')">Fiscalia Santiago</button>
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-ocampo')">Fiscalia Ocampo</button>
-        <button class="btn btn-black" onclick="cargarGaleria('fiscalia-gonzalitos')">Fiscalia Gonzalitos</button>
-        <button class="btn btn-black" onclick="cargarGaleria('casa-parroquia')">Casa Parroquia</button>
-        <button class="btn btn-black" onclick="cargarGaleria('casa-alameda')">Casa Alameda</button>
-        <button class="btn btn-black" onclick="cargarGaleria('malla-ciclonica')">Malla Ciclónica</button>
-        <button class="btn btn-black" onclick="cargarGaleria('otros')">Otros</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Adecuacion-Espacios')">Adecuación de espacios</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Anuncios')">Fabricación de anuncios panorámicos</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Construccion-General')">Construcción General</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Electricidad')">Electricidad de alta y media tensión</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Letras')">Letras 3D</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Limpieza')">Limpieza y pulido de pisos</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Rotulacion')">Rotulación Vehicular y de vinil</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Tabla-Roca')">Trabajos de Tablaroca y Cancelería de aluminio</button>
+        <button class="btn btn-black" onclick="cargarGaleria('Vidrios')">Limpieza de vidrios y fachadas</button>
       </div>
       <div class="row gallery" id="gallery"></div>
     </div>
@@ -208,25 +197,15 @@
             <section class="widget">
               <h3 class="widget-title">Nuestra compañia</h3>
               <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/about.html">Nosotros</a></li>
+                <li><a href="/project.html">Proyectos</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
               </ul>
             </section><!-- .widget -->
           </div><!-- .col-## -->
 
           <div class="col-md-3 col-sm-6">
-            <section class="widget">
-              <h3 class="widget-title">Nuestros servicios</h3>
-              <ul>
-                <li><a href="#">Metal Roofting</a></li>
-                <li><a href="#">Green Building</a></li>
-                <li><a href="#">Construction Consultant</a></li>
-                <li><a href="#">Construction Management</a></li>
-                <li><a href="#">General Contracting</a></li>
-              </ul>
-            </section><!-- .widget -->
           </div><!-- .col-## -->
 
           <div class="col-md-3 col-sm-6">
@@ -290,7 +269,7 @@
         let col = document.createElement("div");
         col.className = "col-xs-5 col-sm-3 col-md-3";
         let img = document.createElement("img");
-        img.src = `proyectos/${proyecto}/image_${i}.jpg`;
+        img.src = `proyectos/${proyecto}/imagen_${i}.jpg`;
         img.alt = `Imagen ${i} de ${proyecto}`;
         img.className = "img-responsive img-thumbnail";
 
